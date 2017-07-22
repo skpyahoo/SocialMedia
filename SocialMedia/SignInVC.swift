@@ -12,7 +12,11 @@ import FBSDKCoreKit
 import Firebase
 
 class SignInVC: UIViewController {
+    
+    @IBOutlet var emailField: FancyField!
 
+    @IBOutlet var pwdField: FancyField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,7 +57,7 @@ class SignInVC: UIViewController {
         
             if error != nil
             {
-                print("Sagar: UNable to authenticate wth Firebase - \(String(describing: error))")
+                print("Sagar: Unable to authenticate wth Firebase - \(String(describing: error))")
             }
             else
             {
@@ -62,6 +66,41 @@ class SignInVC: UIViewController {
         
         })
     }
+    
+    @IBAction func signInTapped(_ sender: Any) {
+        
+        if let email = emailField.text, let pwd = pwdField.text
+        {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+            
+                if error == nil{
+                    print("Sagar: Successfully Sign in with email to the Firebase")
+                }
+                else
+                {
+                    print("Sagar: user doen't exist.Create one")
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                    
+                        if error != nil
+                        {
+                            print("Sagar: Unable to authenticate wth Firebase using email")
+                        }
+                        else
+                        {
+                            print("Sagar: Successfully authenticated with Firebase for new user creation")
+                        }
+
+                        
+                    
+                    })
+                    
+                }
+                
+            
+            })
+        }
+    }
+    
 
 }
 

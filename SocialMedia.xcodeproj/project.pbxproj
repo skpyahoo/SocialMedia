@@ -19,6 +19,7 @@
 		D2EBD2AC1F2253F6002F892C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EBD2AB1F2253F6002F892C /* RoundButton.swift */; };
 		D2EBD2AE1F225571002F892C /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EBD2AD1F225571002F892C /* FancyField.swift */; };
 		D2EBD2B01F2256A8002F892C /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EBD2AF1F2256A8002F892C /* FancyButton.swift */; };
+		D2F949501F2488A700F04D52 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F9494F1F2488A700F04D52 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D2EBD2AB1F2253F6002F892C /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		D2EBD2AD1F225571002F892C /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		D2EBD2AF1F2256A8002F892C /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		D2F9494F1F2488A700F04D52 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D2DA09641F21048B00835D03 /* SignInVC.swift */,
+				D2F9494F1F2488A700F04D52 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				D2DA09651F21048B00835D03 /* SignInVC.swift in Sources */,
 				D2EBD2AC1F2253F6002F892C /* RoundButton.swift in Sources */,
 				D2EBD2B01F2256A8002F892C /* FancyButton.swift in Sources */,
+				D2F949501F2488A700F04D52 /* FeedVC.swift in Sources */,
 				D2DA09631F21048B00835D03 /* AppDelegate.swift in Sources */,
 				D2EBD2A71F2250F8002F892C /* FancyView.swift in Sources */,
 				D2EBD2AA1F22518D002F892C /* Constants.swift in Sources */,

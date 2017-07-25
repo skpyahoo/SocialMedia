@@ -74,7 +74,8 @@ class SignInVC: UIViewController {
                 
                 if let user = user
                 {
-                    self.completeSignIn(id: (user.uid))
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: (user.uid), userData: userData)
                 }
                 
             }
@@ -92,7 +93,8 @@ class SignInVC: UIViewController {
                     print("Sagar: Successfully Sign in with email to the Firebase")
                     if let user = user
                     {
-                     self.completeSignIn(id: (user.uid))
+                     let userData = ["provider": user.providerID]
+                     self.completeSignIn(id: (user.uid), userData: userData)
                     }
                     
                 }
@@ -110,7 +112,8 @@ class SignInVC: UIViewController {
                             print("Sagar: Successfully authenticated with Firebase for new user creation")
                             if let user = user
                             {
-                                self.completeSignIn(id: (user.uid))
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: (user.uid), userData: userData)
                             }
                             
                         }
@@ -126,8 +129,9 @@ class SignInVC: UIViewController {
         }
     }
     
-    func completeSignIn(id: String)
+    func completeSignIn(id: String, userData: Dictionary<String, String>)
     {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
        let key = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Sagar: Succefully got Login UID:\(key)")
         performSegue(withIdentifier: "goToFeed", sender: nil)

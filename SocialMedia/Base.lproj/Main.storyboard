@@ -276,16 +276,16 @@
                                                                 </textView>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R43-Gm-hYY">
-                                                            <rect key="frame" x="247" y="314" width="76.5" height="22"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R43-Gm-hYY">
+                                                            <rect key="frame" x="251.5" y="314" width="76.5" height="22"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMs-a7-T87">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMs-a7-T87">
                                                                     <rect key="frame" x="0.0" y="0.0" width="35.5" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-dV-kr7">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-dV-kr7">
                                                                     <rect key="frame" x="40.5" y="0.0" width="36" height="22"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -299,6 +299,7 @@
                                                         <constraint firstItem="R43-Gm-hYY" firstAttribute="top" secondItem="mpN-x8-eg9" secondAttribute="bottom" constant="16" id="0ql-OP-3gZ"/>
                                                         <constraint firstAttribute="trailing" secondItem="mpN-x8-eg9" secondAttribute="trailing" constant="8" id="2It-Vg-Y71"/>
                                                         <constraint firstAttribute="bottom" secondItem="mpN-x8-eg9" secondAttribute="bottom" constant="40" id="DFq-fN-zYc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="R43-Gm-hYY" secondAttribute="trailing" constant="15" id="TLv-dy-UTd"/>
                                                         <constraint firstItem="mpN-x8-eg9" firstAttribute="leading" secondItem="E9b-uT-eRn" secondAttribute="leading" constant="8" id="hhu-2e-bHz"/>
                                                         <constraint firstItem="mpN-x8-eg9" firstAttribute="top" secondItem="E9b-uT-eRn" secondAttribute="top" constant="8" id="y1q-c7-sen"/>
                                                     </constraints>

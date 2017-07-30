@@ -80,8 +80,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             else
             {
                 cell.configureCell(post: post)
-                return cell
+                
             }
+            return cell
 
         }
         else
